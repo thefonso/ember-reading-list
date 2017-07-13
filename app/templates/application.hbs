@@ -1,5 +1,5 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-{{welcome-page}}
-{{!-- Feel free to remove this! --}}
+<h1>Reading list</h1>
+
+{{reading-list books=model addBook=(route-action "addBook") removeBook=(route-action "removeBook")}}
 
 {{outlet}}
